@@ -1,6 +1,10 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "phusion/ubuntu-14.04-amd64"
-
+  
+  config.vm.provider :virtualbox do |vm|
+      vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/vagrant", "1"]
+  end
+  
   # We need to configure docker to expose port 60366
   config.vm.provision "shell", inline: <<-SCRIPT
 
