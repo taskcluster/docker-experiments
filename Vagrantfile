@@ -1,3 +1,4 @@
+# MUST BE RUN BY ADMIN ON WINDOWS!
 Vagrant.configure("2") do |config|
   config.vm.box = "phusion/ubuntu-14.04-amd64"
   
