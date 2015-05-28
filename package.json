@@ -14,7 +14,8 @@
     "slugid": "1.0.3",
     "taskcluster-base": "0.7.19",
     "taskcluster-client": "^0.22.0",
-    "ws": "^0.7.2"
+    "ws": "^0.7.2",
+    "through": "2.3.7"
   },
   "devDependencies": {
     "mocha": "^2.2.1",
