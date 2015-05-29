@@ -38,6 +38,5 @@
     "yoda": [1, "never"],
     "comma-dangle": [2, "always-multiline"],
     "strict": [2,"never"],
-    "key-spacing": 0
   }
 }
