@@ -5,6 +5,9 @@ Vagrant.configure("2") do |config|
   config.vm.provider :virtualbox do |vm|
       vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/vagrant", "1"]
   end
+
+  # Forwards port 8080 to match host
+  config.vm.network "forwarded_port", guest: 8080, host: 8080
   
   # We need to configure docker to expose port 60366
   config.vm.provision "shell", inline: <<-SCRIPT
