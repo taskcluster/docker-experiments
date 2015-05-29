@@ -59,6 +59,7 @@
       term.write('\x1b[31mWelcome to term.js!\x1b[m\r\n');
 
       socket.on('data', function(data) {
+        console.log(data);
         term.write(data);
       });
 
